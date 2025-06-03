@@ -1,0 +1,41 @@
+extends ../layouts/default.pug
+block main
+    header
+      .logo
+        a(href='/')
+          img(src='/images/logo-removebg.png', alt='Logo')
+      .form
+        form(action='/search' method='get')
+          input(type='text' name='query' placeholder='Nhập tên sách')
+          button(type='submit') 
+            i(class='fa-solid fa-search') 
+      .categories
+        a(href='#') 
+          i(class="fa-solid fa-list-ul")
+          span Thể loại
+        ul.sub-menu
+          li: a(href='/categories/toan-hoc') Toán học
+          li: a(href='/categories/van-hoc') Văn học
+          li: a(href='/categories/khoa-hoc') Khoa học
+          li: a(href='/categories/lich-su') Lịch sử
+      .bookshelf
+        a(href='/bookshelf') 
+          i(class="fa-solid fa-book-open")
+          span Tủ sách cá nhân
+    main
+      h2 Sách mới
+      .books
+        each book in books
+          .book
+            a(href=`/detail/${book.id}`)
+              img(src=`/images/${book.image}` alt=book.title)
+              h4= book.title
+      h2 Sách hot
+      .books
+        each book in books
+          .book
+            a(href=`/detail/${book.id}`)
+              img(src=`/images/${book.image}` alt=book.title)
+              h4= book.title
+
+    footer

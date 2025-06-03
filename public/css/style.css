@@ -1,0 +1,14 @@
+@import url('./header.css');
+@import url('./body.css');
+
+body {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:visited {
+  color: inherit; /* giữ nguyên màu sau khi click */
+}
+

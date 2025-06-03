@@ -1,0 +1,49 @@
+.book-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+
+.book-img {
+  width: 150px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.book-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-info h3 {
+  margin: 0;
+}
+
+.actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.book-info a, .book-chapters a {
+  color: #007bff
+}
+
+.book-info a:hover, .book-chapters a:hover {
+  color: #0056b3;
+}

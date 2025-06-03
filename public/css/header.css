@@ -1,0 +1,100 @@
+/* -----header--------- */
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 3px 0px;
+}
+
+header .logo {
+  width: 100px;
+  height: 100%;
+}
+header .logo a img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.form {
+  width: 350px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 0 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.form form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form form input[type="text"] {
+  width: 90%;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: 0;
+  border: 0;
+}
+
+.form form button {
+  width: 10%;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.categories {
+  width: 100px;
+  position: relative;
+}
+.categories a {
+  font-size: 20px;
+}
+.categories a i {
+  margin-right: 10px;
+}
+.categories:hover .sub-menu,
+.sub-menu:hover {
+  display: block;
+}
+
+ul.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  list-style: none;
+  background-color: #f2f2f2;
+  margin: 0;
+  z-index: 10;
+
+  column-count: 2;
+  border-radius: 6px;
+}
+
+ul.sub-menu li {
+  margin-bottom: 8px;
+  width: 100px;
+}
+ul.sub-menu li a:hover {
+  background-color: aliceblue;
+}
+
+.bookshelf a {
+  font-size: 20px;
+}
+.bookshelf a i {
+  margin-right: 10px;
+}
+
+/* --------- end header--------- */

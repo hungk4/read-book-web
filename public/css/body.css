@@ -1,0 +1,19 @@
+/* Container cho danh sách sách */
+.books {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(160px, 1fr));
+  gap: 24px;
+  margin: 24px 20px;
+  padding: 0;
+}
+
+.books .book {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+.books .book img {
+  width: 150px;
+  height: 200px;
+  object-fit: contain;
+}

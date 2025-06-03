@@ -1,0 +1,142 @@
+[
+  {
+    "id": "1",
+    "title": "Định lý cuối cùng của Fermat",
+    "author": "Simon Singh",
+    "category": "Toán học",
+    "image": "book.jpg",
+    "file": "book1.pdf",
+    "description": "Câu chuyện ly kỳ về bài toán nổi tiếng nhất lịch sử toán học và hành trình giải mã của Andrew Wiles.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Số Đẹp",
+    "author": "Ian Stewart",
+    "category": "Toán học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Khám phá vẻ đẹp kỳ lạ và hài hước của các con số trong toán học qua cách kể chuyện hấp dẫn.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Những Bài Toán Thú Vị",
+    "author": "Martin Gardner",
+    "category": "Toán học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Tuyển tập các bài toán tư duy logic và sáng tạo từ chuyên mục nổi tiếng của Martin Gardner.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Nhà giả kim",
+    "author": "Paulo Coelho",
+    "category": "Văn học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Hành trình tìm kho báu kỳ diệu của cậu bé chăn cừu và bài học về số phận và ước mơ.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Tuổi trẻ đáng giá bao nhiêu?",
+    "author": "Rosie Nguyễn",
+    "category": "Văn học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Một cẩm nang định hướng dành cho người trẻ, khơi gợi đam mê, ước mơ và phát triển bản thân.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Chuyện con mèo dạy hải âu bay",
+    "author": "Luis Sepúlveda",
+    "category": "Văn học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Một câu chuyện nhẹ nhàng nhưng đầy nhân văn về lòng dũng cảm, tình yêu thương và trách nhiệm.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Vũ trụ trong vỏ hạt dẻ",
+    "author": "Stephen Hawking",
+    "category": "Khoa học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Một hành trình cô đọng và trực quan qua thế giới vật lý hiện đại với cách lý giải dễ hiểu.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Nguồn gốc các loài",
+    "author": "Charles Darwin",
+    "category": "Khoa học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Tác phẩm đặt nền móng cho thuyết tiến hóa và sinh học hiện đại, một kiệt tác của khoa học.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Lược sử thời gian",
+    "author": "Stephen Hawking",
+    "category": "Khoa học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Giải thích những khái niệm vĩ mô như Big Bang, hố đen và bản chất thời gian cho người đọc phổ thông.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Những con số biết nói",
+    "author": "Hans Rosling",
+    "category": "Khoa học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Khám phá cách thế giới vận hành thật sự thông qua số liệu và tư duy thống kê sắc bén.",
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  }
+]
