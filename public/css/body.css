@@ -2,18 +2,60 @@
 .books {
   display: grid;
   grid-template-columns: repeat(5, minmax(160px, 1fr));
-  gap: 24px;
-  margin: 24px 20px;
+  gap: 5px;
+  margin: 24px auto;
   padding: 0;
+  justify-items: center;
 }
 
 .books .book {
-  text-align: center;
+  position: relative;
+  width: 190px;
+  height: 300px;
   border: 1px solid #ccc;
-  border-radius: 12px;
+  border-radius: 8px;
 }
+
 .books .book img {
-  width: 150px;
-  height: 200px;
-  object-fit: contain;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
+
+.load-more {
+  display: block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.delete-btn {
+  position: absolute; /* Đặt nút ở góc trên phải */
+  top: 5px; /* Khoảng cách từ cạnh trên */
+  right: 5px; /* Khoảng cách từ cạnh phải */
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  position: absolute; /* Đặt nút ở góc trên phải */
+  top: 5px; /* Khoảng cách từ cạnh trên */
+  right: 5px; /* Khoảng cách từ cạnh phải */
+  background-color: darkred;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+

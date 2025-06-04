@@ -24,18 +24,22 @@ block main
           span Tủ sách cá nhân
     main
       h2 Sách mới
-      .books
-        each book in books
+      .books.new
+        each book in newBooks
           .book
             a(href=`/detail/${book.id}`)
               img(src=`/images/${book.image}` alt=book.title)
+            a(href=`/detail/${book.id}`)
               h4= book.title
       h2 Sách hot
-      .books
-        each book in books
+      .books.hot
+        each book, index in books
           .book
             a(href=`/detail/${book.id}`)
               img(src=`/images/${book.image}` alt=book.title)
+            a(href=`/detail/${book.id}`)
               h4= book.title
+        
+      button(type='button' class='load-more') Xem thêm
 
     footer

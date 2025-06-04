@@ -34,7 +34,7 @@ block main
             a(href=`/authors/${book.author}`) #{book.author}
           .category 
             span Thể loại: 
-            a(href=`/categories/${book.category}`) #{book.category}
+            a(href=`/categories/${book.category.id}`) #{book.category.name}
           .description
             span Mô tả: #{book.description}
           .actions

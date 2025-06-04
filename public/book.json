@@ -7,6 +7,7 @@
     "image": "book.jpg",
     "file": "book1.pdf",
     "description": "Câu chuyện ly kỳ về bài toán nổi tiếng nhất lịch sử toán học và hành trình giải mã của Andrew Wiles.",
+    "isReading": false,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
@@ -21,6 +22,7 @@
     "image": "book.jpg",
     "file": "book.pdf",
     "description": "Khám phá vẻ đẹp kỳ lạ và hài hước của các con số trong toán học qua cách kể chuyện hấp dẫn.",
+    "isReading": true,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
@@ -35,6 +37,7 @@
     "image": "book.jpg",
     "file": "book.pdf",
     "description": "Tuyển tập các bài toán tư duy logic và sáng tạo từ chuyên mục nổi tiếng của Martin Gardner.",
+    "isReading": false,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
@@ -49,6 +52,7 @@
     "image": "book.jpg",
     "file": "book.pdf",
     "description": "Hành trình tìm kho báu kỳ diệu của cậu bé chăn cừu và bài học về số phận và ước mơ.",
+    "isReading": false,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
@@ -63,6 +67,7 @@
     "image": "book.jpg",
     "file": "book.pdf",
     "description": "Một cẩm nang định hướng dành cho người trẻ, khơi gợi đam mê, ước mơ và phát triển bản thân.",
+    "isReading": false,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
@@ -77,6 +82,7 @@
     "image": "book.jpg",
     "file": "book.pdf",
     "description": "Một câu chuyện nhẹ nhàng nhưng đầy nhân văn về lòng dũng cảm, tình yêu thương và trách nhiệm.",
+    "isReading": false,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
@@ -91,6 +97,7 @@
     "image": "book.jpg",
     "file": "book.pdf",
     "description": "Một hành trình cô đọng và trực quan qua thế giới vật lý hiện đại với cách lý giải dễ hiểu.",
+    "isReading": false,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
@@ -105,6 +112,7 @@
     "image": "book.jpg",
     "file": "book.pdf",
     "description": "Tác phẩm đặt nền móng cho thuyết tiến hóa và sinh học hiện đại, một kiệt tác của khoa học.",
+    "isReading": false,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
@@ -119,6 +127,7 @@
     "image": "book.jpg",
     "file": "book.pdf",
     "description": "Giải thích những khái niệm vĩ mô như Big Bang, hố đen và bản chất thời gian cho người đọc phổ thông.",
+    "isReading": false,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
@@ -133,6 +142,157 @@
     "image": "book.jpg",
     "file": "book.pdf",
     "description": "Khám phá cách thế giới vận hành thật sự thông qua số liệu và tư duy thống kê sắc bén.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Sách mở rộng 11",
+    "author": "Tác giả 11",
+    "category": "Văn học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 11.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Sách mở rộng 12",
+    "author": "Tác giả 12",
+    "category": "Toán học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 12.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Sách mở rộng 13",
+    "author": "Tác giả 13",
+    "category": "Khoa học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 13.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Sách mở rộng 14",
+    "author": "Tác giả 14",
+    "category": "Văn học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 14.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Sách mở rộng 15",
+    "author": "Tác giả 15",
+    "category": "Toán học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 15.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Sách mở rộng 16",
+    "author": "Tác giả 16",
+    "category": "Khoa học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 16.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "17",
+    "title": "Sách mở rộng 17",
+    "author": "Tác giả 17",
+    "category": "Văn học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 17.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "18",
+    "title": "Sách mở rộng 18",
+    "author": "Tác giả 18",
+    "category": "Toán học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 18.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Sách mở rộng 19",
+    "author": "Tác giả 19",
+    "category": "Khoa học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 19.",
+    "isReading": false,
+    "chapters": [
+      { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
+      { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
+      { "id": "3", "title": "Chương 3: Đỉnh cao", "page": 20 }
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Sách mở rộng 20",
+    "author": "Tác giả 20",
+    "category": "Văn học",
+    "image": "book.jpg",
+    "file": "book.pdf",
+    "description": "Nội dung hấp dẫn của quyển sách mở rộng số 20.",
+    "isReading": false,
     "chapters": [
       { "id": "1", "title": "Chương 1: Khởi đầu", "page": 1 },
       { "id": "2", "title": "Chương 2: Hành trình", "page": 10 },
