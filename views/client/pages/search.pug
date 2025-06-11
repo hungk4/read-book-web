@@ -1,0 +1,13 @@
+extends ../layouts/default.pug
+block main
+  include ../partials/header.pug
+  main
+    h2 Kết quả tìm kiếm cho từ khóa "#{keyword}"
+    .books
+      each book in books
+        .book
+          a(href=`/detail/${book.id}`)
+            img(src=`/images/${book.image}` alt=book.title)
+          a(href=`/detail/${book.id}`)
+            h4= book.title    
+    button(type='button' class='load-more') Xem thêm

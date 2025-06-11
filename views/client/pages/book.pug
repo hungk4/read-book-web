@@ -1,11 +1,19 @@
-html
-  head
-    title= book.title
-  body
-    h1= book.title
-    h3 Tác giả: #{book.author}
+extends ../layouts/default.pug
+block main
+    header
+      .button-back
+        a(href="/") <i class="fa-solid fa-house"></i>
+      .title #{book.title}
+      .chapters
+        span(onclick="toggleMenu()")
+          i.fa-solid.fa-list
+        .sub-menu.hidden
+          each chapter in book.chapters
+            a(href=`/books/${book._id}?page=${chapter.page}`) #{chapter.title}
+  
     if book.file
-      iframe(src=`/books/${book.file}#page=${pageNumber}` width="100%" height="600px")
+      iframe(id="bookContent" src=`/books/${book.file}#page=${pageNumber}&pagemode=none` width="100%" height="600px")
     else
       p Sách chưa có file đọc trực tuyến.
-    a(href="/") Quay lại trang chủ
+    h3 Ghi chú của bạn:
+    ul#notesList

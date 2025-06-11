@@ -1,0 +1,20 @@
+header
+  .logo
+    a(href='/')
+      img(src='/images/logo-removebg.png', alt='Logo')
+  .form
+    form(action="/search" method='get' class='search-form')
+      input(type='text' name='keyword' placeholder='Nhập tên sách' class='search-input')
+      button(type='submit') 
+        i(class='fa-solid fa-search') 
+  .categories
+    a(href='#') 
+      i(class="fa-solid fa-list-ul")
+      span Thể loại
+    ul.sub-menu
+      each category in categories
+        li: a(href=`/categories/${category.id}`) #{category.name}
+  .bookshelf
+    a(href='/bookshelf') 
+      i(class="fa-solid fa-book-open")
+      span Tủ sách cá nhân

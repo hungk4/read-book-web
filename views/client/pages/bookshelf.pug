@@ -1,27 +1,6 @@
 extends ../layouts/default.pug
 block main
-    header
-      .logo
-        a(href='/')
-          img(src='/images/logo-removebg.png', alt='Logo')
-      .form
-        form(action='/search' method='get')
-          input(type='text' name='query' placeholder='Nhập tên sách')
-          button(type='submit') 
-            i(class='fa-solid fa-search') 
-      .categories
-        a(href='#') 
-          i(class="fa-solid fa-list-ul")
-          span Thể loại
-        ul.sub-menu
-          li: a(href='/categories/toan-hoc') Toán học
-          li: a(href='/categories/van-hoc') Văn học
-          li: a(href='/categories/khoa-hoc') Khoa học
-          li: a(href='/categories/lich-su') Lịch sử
-      .bookshelf
-        a(href='/bookshelf') 
-          i(class="fa-solid fa-book-open")
-          span Tủ sách cá nhân
+    include ../partials/header.pug
     main
       h2 Tủ sách cá nhân
       .books

@@ -1,0 +1,44 @@
+extends ../layouts/default.pug
+block main
+    header
+      .button-back
+        a(href="/") <i class="fa-solid fa-house"></i>
+      .title #{book.title}
+      .chapters
+        span(onclick="toggleMenu()")
+          i.fa-solid.fa-list
+        .sub-menu.hidden
+          each chapter in book.chapters
+            a(href=`/books/${book._id}?page=${chapter.page}`) #{chapter.title}
+  
+    if book.file
+      // Khu vực hiển thị PDF
+      .navigation
+        button(onclick="prevPage()") Trang trước
+        button(onclick="nextPage()") Trang sau
+        span Trang: 
+          input#currentPageInput(
+            type="number", 
+            min="1", 
+            value="1", 
+            style="width: 60px; text-align: center;"
+            placeholder="Trang"
+          )
+          | / 
+          span#totalPages
+
+      div#pdfViewer
+        canvas#pdfCanvas
+            // Khu vực hiển thị PDF
+      .navigation
+        button(onclick="prevPage()") Trang trước
+        button(onclick="nextPage()") Trang sau
+        
+    else
+      p Sách chưa có file đọc trực tuyến.
+    h3 Ghi chú của bạn:
+    ul#notesList
+
+    script.
+      window.pdfFileUrl = "/books/#{book.file}";
+      window.startPage = #{pageNumber || 1}; 

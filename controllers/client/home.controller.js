@@ -5,11 +5,13 @@ const Category = require("../../models/category.model");
 
 // [GET] /
 module.exports.index = async (req, res) => {
-  const books = await Book.find();
+  const books = await Book.find().populate("category");
+  const categories = await Category.find();
   res.render("client/pages/homepage.pug", {
     pageTitle: "Trang chủ",
     newBooks: books.slice(0, 5),
     books: books.slice(0, 10),
+    categories,
   });
 };
 
@@ -32,9 +34,11 @@ module.exports.book = async (req, res) => {
   const pageNumber = page || 1;
 
   // Render trang book.pug
-  res.render("client/pages/book", {
+  res.render("client/pages/book-test", {
     book,
     pageNumber,
+    pageCSS: "/css/book.css",
+    pageTitle: book.title,
   });
 };
 
@@ -42,6 +46,7 @@ module.exports.book = async (req, res) => {
 module.exports.detail = async (req, res) => {
   try {
     const book = await Book.findById(req.params.id).populate("category");
+    const categories = await Category.find();
 
     if (!book) {
       return res.status(404).send("Không tìm thấy sách");
@@ -51,6 +56,7 @@ module.exports.detail = async (req, res) => {
       book,
       pageTitle: "Chi tiết sách",
       pageCSS: "/css/detail.css",
+      categories,
     });
   } catch (error) {
     console.error("Lỗi khi lấy chi tiết sách:", error);
@@ -62,12 +68,14 @@ module.exports.detail = async (req, res) => {
 module.exports.bookshelf = async (req, res) => {
   const books = await Book.find();
   const bookshelf = books.filter((book) => book.isReading === true);
+  const categories = await Category.find();
 
   res.render("client/pages/bookshelf", {
     pageTitle: "Tủ sách của bạn",
     books: bookshelf,
     bookshelf,
     pageCSS: "/css/bookshelf.css",
+    categories,
   });
 };
 
@@ -99,5 +107,37 @@ module.exports.deleteBookFromBookshelf = async (req, res) => {
 
   res.status(200).json({
     message: "Đã xóa sách khỏi tủ sách thành công",
+  });
+};
+
+// [GET] /categories/:id
+module.exports.categories = async (req, res) => {
+  const { id } = req.params;
+
+  // Tìm danh mục theo ID
+  const categories = await Category.find();
+  const category = await Category.findById(id);
+  const books = await Book.find({ category: id }).populate("category");
+
+  res.render("client/pages/category", {
+    pageTitle: `Danh mục: ${category.name}`,
+    category,
+    books,
+    categories,
+  });
+};
+
+//  [GET] /search
+module.exports.search = async (req, res) => {
+  const keyword = req.query.keyword || "";
+  const books = await Book.find({
+    title: { $regex: keyword, $options: "i" },
+  });
+  const categories = await Category.find();
+  res.render("client/pages/search", {
+    pageTitle: "Tìm kiếm sách",
+    books: books,
+    keyword,
+    categories
   });
 };

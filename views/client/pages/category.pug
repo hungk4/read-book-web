@@ -1,2 +1,12 @@
-html
-  
+extends ../layouts/default.pug
+block main
+  include ../partials/header.pug
+  main
+    h2 Thể loại: #{category.name}
+    .books
+      each book in books
+        .book
+          a(href=`/detail/${book.id}`)
+            img(src=`/images/${book.image}` alt=book.title)
+          a(href=`/detail/${book.id}`)
+            h4= book.title
