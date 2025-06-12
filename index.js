@@ -9,6 +9,11 @@ app.set("view engine", "pug");
 
 app.use(express.static(`${__dirname}/public`));
 
+// Middleware xử lý dữ liệu form và JSON
+app.use(express.urlencoded({ extended: true })); // xử lý form POST (application/x-www-form-urlencoded)
+app.use(express.json());                          // xử lý JSON từ client (application/json)
+
+
 const clientRoutes = require("./routes/client/index.route");
 const adminRoutes = require("./routes/admin/index.route");
 app.use("/", clientRoutes);

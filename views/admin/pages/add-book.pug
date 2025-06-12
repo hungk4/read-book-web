@@ -1,0 +1,35 @@
+extends ../layouts/default.pug
+block main
+    include ../partials/header.pug
+    main
+      include ../partials/left-sidebar.pug
+      .content
+        .form-add-book
+          h2 Thêm sách mới
+          form(action='/admin/books/add' method='POST' enctype='multipart/form-data')
+            .form-group
+              label(for='title') Tên sách
+              input(type='text' id='title' name='title' required)
+            .form-group
+              label(for='author') Tác giả
+              input(type='text' id='author' name='author' required)
+            .form-group
+              label(for='category') Thể loại
+              select(id='category' name='category' required)
+                each categroy in categories
+                  option(value=categroy._id)= categroy.name
+            .form-group
+              label(for="image") Ảnh bìa
+              input(type="file" id="image" name="image" accept="image/*" required)
+            .form-group
+              label(for='description') Mô tả
+              textarea(id='description' name='description' rows='4' required)
+            .form-group
+              label(for="chapters") Chương sách
+              #chapters-container
+                .chapter-group
+                  input(type='text' name='chapters[0][title]' placeholder='Tiêu đề chương' required id)
+                  input(type='number' name='chapters[0][page]' placeholder='Trang bắt đầu' required)
+                  button(type='button' class='remove-chapter' id="btnDelete[0]") Xóa chương
+              button(type='button' id='add-chapter') + Thêm chương
+            button(type='submit') Thêm sách

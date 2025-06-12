@@ -12,7 +12,7 @@ module.exports.index = async (req, res) => {
 // [GET] /admin/books
 module.exports.books = async (req, res) => {
   const page = parseInt(req.query.page) || 1;
-  const limit = 2;
+  const limit = 5;
   const totalBooks = await Book.countDocuments();
   const totalPages = Math.ceil(totalBooks / limit);
 
@@ -42,3 +42,19 @@ module.exports.categories = async (req, res) => {
     totalPages,
   });
 };
+
+// [GET] /admin/books/add
+module.exports.addBook = async (req, res) => {
+  const categories = await Category.find();
+  res.render("admin/pages/add-book", {
+    pageTitle: "Add Book",
+    categories,
+  });
+};
+
+
+// [POST] /admin/books/add
+module.exports.postAddBook = async (req, res) => {
+  console.log(req.body);
+  res.redirect("/admin/books");
+}
