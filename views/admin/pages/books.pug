@@ -1,0 +1,47 @@
+extends ../layouts/default.pug
+block main
+    include ../partials/header.pug
+    main
+      include ../partials/left-sidebar.pug
+      .content
+        .button-add
+          a(href='/admin/books/add') Thêm sách mới
+        .list-books
+          h2 Danh sách sách
+          table
+            colgroup
+              col(style="width: 30%")
+              col(style="width: 15%")
+              col(style="width: 20%")
+              col(style="width: 15%")
+              col(style="width: 20%")
+            thead
+              tr
+                th Tên sách
+                th Ảnh bìa
+                th Tác giả
+                th Thể loại
+                th Hành động
+            tbody
+              each book in books
+                tr
+                  td= book.title
+                  td
+                    img(src=`/images/${book.image}` alt=book.title)
+                  td= book.author
+                  td= book.category.name
+                  td
+                    .actions
+                      .button-actions
+                        a(href=`/admin/books/edit/${book._id}`) Sửa
+                      .button-actions
+                        a(href=`/admin/books/delete/${book._id}`) Xóa
+          .paginations
+            ul
+              each p in pageNumbers
+                if(p === "...")
+                  li.pagi
+                    span.dots ...
+                else
+                  li.pagi
+                    a(href=`/admin/books?page=${p}`)= p

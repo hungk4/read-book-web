@@ -10,7 +10,7 @@ module.exports.index = async (req, res) => {
   res.render("client/pages/homepage.pug", {
     pageTitle: "Trang chủ",
     newBooks: books.slice(0, 5),
-    books: books.slice(0, 10),
+    books: books.slice(0, 5),
     categories,
   });
 };

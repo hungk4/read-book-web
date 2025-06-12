@@ -10,7 +10,10 @@ app.set("view engine", "pug");
 app.use(express.static(`${__dirname}/public`));
 
 const clientRoutes = require("./routes/client/index.route");
+const adminRoutes = require("./routes/admin/index.route");
 app.use("/", clientRoutes);
+app.use("/admin", adminRoutes);
+
 
 
 const connect = async () => {
